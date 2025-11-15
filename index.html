@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Global Citizenship Initiative - The Impacts of Climate Change</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        condensed: ["Roboto Condensed", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+
+            <header
+                class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800 h-16">
+                <div class="flex items-center justify-between whitespace-nowrap px-4 sm:px-10 w-full max-w-7xl">
+                    <div class="flex items-center gap-4 text-slate-900 dark:text-slate-50">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h2
+                            class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight tracking-[-0.015em]">
+                            Global Citizenship Initiative
+                        </h2>
+                    </div>
+
+                    <div class="md:hidden">
+                        <button class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-800"
+                            id="mobile-menu-button">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+
+                    <div class="hidden md:flex md:items-center md:flex-row md:flex-1 md:justify-end md:gap-8
+                                flex-col w-full absolute top-16 left-0 bg-background-light dark:bg-background-dark 
+                                shadow-md md:shadow-none p-4 md:p-0 md:static md:w-auto"
+                        id="nav-links-container">
+
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-9 gap-4">
+                            <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                                href="#overview">Overview</a>
+                            <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                                href="#causes-effects">Causes & Effects</a>
+                            <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                                href="#filipino-context">Filipino Context</a>
+                            <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                                href="#action">Call to Action</a>
+                            <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                                href="#references">References</a>
+                        </div>
+                        <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors mt-4 md:mt-0">
+                            <span class="truncate"><a href="https://m.me/j/AbbeDgMBe8DqYz3x/" target="_blank">Get Involved</a></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+
+            <main class="flex flex-col items-center pt-16">
+                <div class="layout-content-container flex flex-col w-full max-w-7xl px-4 sm:px-10">
+                    <section class="w-full py-10 md:py-20" id="hero">
+                        <div class="@container">
+                            <div class="@[480px]:p-4">
+                                <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                                    data-alt="A powerful typhoon viewed from space, swirling over the Philippine islands."
+                                    style="
+                      background-image: linear-gradient(
+                          rgba(0, 0, 0, 0.2) 0%,
+                          rgba(0, 0, 0, 0.6) 100%
+                        ),
+                        url('overview.jpeg');
+                    ">
+                                    <div class="flex flex-col gap-2 text-left max-w-3xl">
+                                        <h1
+                                            class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                            Understanding the Urgent Crisis of Climate Change
+                                        </h1>
+                                        <h2
+                                            class="text-slate-100 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                            An in-depth look at one of the most critical global
+                                            issues of our time and its profound impact on the
+                                            Philippines and the world.
+                                        </h2>
+                                    </div>
+                                    <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-primary/90 transition-colors"
+                                        href="https://www.un.org/en/climatechange/what-is-climate-change"
+                                        target="_blank">
+                                        <span class="truncate">Learn More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="w-full py-10 md:py-20" id="overview">
+                        <h2
+                            class="text-slate-900 dark:text-slate-50 text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
+                            Overview: The Big Picture
+                        </h2>
+                        <p class="max-w-3xl mx-auto text-center text-slate-600 dark:text-slate-400 px-4 pb-8">
+                            Climate change refers to long-term shifts in temperatures and
+                            weather patterns, primarily driven by human activities like
+                            burning fossil fuels. This global issue is not a distant
+                            threat—it is actively causing more intense typhoons, rising sea
+                            levels, and food insecurity, especially in vulnerable nations
+                            like the Philippines.
+                        </p>
+                        <div class="flex flex-wrap gap-8 p-4 justify-center">
+                            <div
+                                class="flex min-w-[200px] flex-1 flex-col gap-2 rounded-lg p-6 bg-blue-50 dark:bg-slate-800/50 shadow-sm border-b-2 border-slate-200 dark:border-b-slate-700 text-center">
+                                <p class="text-slate-700 dark:text-slate-300 text-base font-medium leading-normal">
+                                    Global Temperature Rise (2023)
+                                </p>
+                                <p
+                                    class="font-condensed text-primary tracking-tighter text-5xl font-bold leading-tight">
+                                    ~1.45°C
+                                </p>
+                                <p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal">
+                                    Above 1850-1900 levels (WMO)
+                                </p>
+                            </div>
+                            <div
+                                class="flex min-w-[200px] flex-1 flex-col gap-2 rounded-lg p-6 bg-blue-50 dark:bg-slate-800/50 shadow-sm border-b-2 border-slate-200 dark:border-b-slate-700 text-center">
+                                <p class="text-slate-700 dark:text-slate-300 text-base font-medium leading-normal">
+                                    Atmospheric CO2 Level
+                                </p>
+                                <p
+                                    class="font-condensed text-primary tracking-tighter text-5xl font-bold leading-tight">
+                                    427.60 ppm
+                                </p>
+                                <p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal">
+                                    As of November 2025 (co2.earth)
+                                </p>
+                            </div>
+                            <div
+                                class="flex min-w-[200px] flex-1 flex-col gap-2 rounded-lg p-6 bg-blue-50 dark:bg-slate-800/50 shadow-sm border-b-2 border-slate-200 dark:border-b-slate-700 text-center">
+                                <p class="text-slate-700 dark:text-slate-300 text-base font-medium leading-normal">
+                                    PH Typhoon Frequency
+                                </p>
+                                <p
+                                    class="font-condensed text-primary tracking-tighter text-5xl font-bold leading-tight">
+                                    ~20 per year
+                                </p>
+                                <p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal">
+                                    Average entering PH Area of Responsibility (PAGASA)
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="w-full py-10 md:py-20" id="causes-effects">
+                        <h2
+                            class="text-slate-900 dark:text-slate-50 text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center">
+                            Cause and Effect
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+                            <div>
+                                <h3 class="text-2xl font-bold text-center mb-6 text-slate-800 dark:text-slate-200">
+                                    Causes
+                                </h3>
+                                <div class="space-y-6">
+                                    <div
+                                        class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-slate-800/50 shadow-sm border border-slate-200 dark:border-slate-800">
+                                        <div
+                                            class="flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+                                            <span class="material-symbols-outlined">local_fire_department</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-slate-900 dark:text-slate-50">
+                                                Fossil Fuel Combustion
+                                            </h4>
+                                            <p class="text-sm text-slate-600 dark:text-slate-400">
+                                                Burning coal, oil, and gas for electricity and
+                                                transport releases greenhouse gases.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-slate-800/50 shadow-sm border border-slate-200 dark:border-slate-800">
+                                        <div
+                                            class="flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+                                            <span class="material-symbols-outlined">forest</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-slate-900 dark:text-slate-50">
+                                                Deforestation & Land Use
+                                            </h4>
+                                            <p class="text-sm text-slate-600 dark:text-slate-400">
+                                                Clearing forests for agriculture and urban development
+                                                reduces Earth's capacity to absorb CO2.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-slate-800/50 shadow-sm border border-slate-200 dark:border-slate-800">
+                                        <div
+                                            class="flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+                                            <span class="material-symbols-outlined">precision_manufacturing</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-slate-900 dark:text-slate-50">
+                                                Industrial Agriculture
+                                            </h4>
+                                            <p class="text-sm text-slate-600 dark:text-slate-400">
+                                                Large-scale farming, including livestock, releases
+                                                significant amounts of methane and nitrous oxide.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-center mb-6 text-slate-800 dark:text-slate-200">
+                                    Effects
+                                </h3>
+                                <div class="space-y-6">
+                                    <div
+                                        class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-slate-800/50 shadow-sm border border-slate-200 dark:border-slate-800">
+                                        <div
+                                            class="flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+                                            <span class="material-symbols-outlined">thunderstorm</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-slate-900 dark:text-slate-50">
+                                                Extreme Weather Events
+                                            </h4>
+                                            <p class="text-sm text-slate-600 dark:text-slate-400">
+                                                Warmer oceans fuel stronger and more destructive
+                                                typhoons, while other regions face severe droughts.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-slate-800/50 shadow-sm border border-slate-200 dark:border-slate-800">
+                                        <div
+                                            class="flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+                                            <span class="material-symbols-outlined">water</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-slate-900 dark:text-slate-50">
+                                                Sea Level Rise
+                                            </h4>
+                                            <p class="text-sm text-slate-600 dark:text-slate-400">
+                                                Melting ice caps cause sea levels to rise, directly
+                                                threatening coastal cities like Manila and Cebu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-slate-800/50 shadow-sm border border-slate-200 dark:border-slate-800">
+                                        <div
+                                            class="flex-shrink-0 size-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+                                            <span class="material-symbols-outlined">eco</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-slate-900 dark:text-slate-50">
+                                                Food Security Threats
+                                            </h4>
+                                            <p class="text-sm text-slate-600 dark:text-slate-400">
+                                                Floods, droughts, and ocean acidification (coral
+                                                bleaching) destroy crops and fisheries, impacting our
+                                                food supply.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="w-full py-10 md:py-20" id="filipino-context">
+                        <h2
+                            class="text-slate-900 dark:text-slate-50 text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center">
+                            Filipino Context: Local Impact
+                        </h2>
+                        <div class="relative rounded-lg overflow-hidden bg-slate-900" id="slider-container">
+                            <div class="flex transition-transform duration-500 ease-in-out" id="slider"
+                                style="transform: translateX(0%)">
+                                <div class="w-full flex-shrink-0 h-[500px] flex flex-col justify-end p-8 md:p-12 text-white bg-cover bg-center"
+                                    data-alt="Flooded streets and affected communities in the Philippines after Bagyong Tino (2017)."
+                                    style="
+                      background-image: linear-gradient(
+                          rgba(0, 0, 0, 0.1),
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                        url('typhoon_tino.jpg');
+                    ">
+                                    <h3 class="text-3xl font-bold mb-2">
+                                        Extreme Typhoon Vulnerability
+                                    </h3>
+                                    <p class="max-w-2xl">
+                                        The Philippines faces around 20 typhoons every year. In
+                                        2017, <b>Bagyong Tino</b> caused heavy rains, flooding,
+                                        and damage in multiple regions—highlighting the country’s
+                                        continued vulnerability to stronger and less predictable
+                                        storms.
+                                    </p>
+                                </div>
+                                <div class="w-full flex-shrink-0 h-[500px] flex flex-col justify-end p-8 md:p-12 text-white bg-cover bg-center"
+                                    data-alt="A farmer walking through a flooded rice field in Central Luzon."
+                                    style="
+                      background-image: linear-gradient(
+                          rgba(0, 0, 0, 0.1),
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                        url('Rice_fields_submerged_in_flooding_in_Naga\,_Camarines_Sur.jpg');
+                    ">
+                                    <h3 class="text-3xl font-bold mb-2">
+                                        Impact on Agriculture
+                                    </h3>
+                                    <p class="max-w-2xl">
+                                        Changing weather patterns, including severe droughts and
+                                        intense flooding, disrupt planting seasons and destroy
+                                        crops, threatening the food security and livelihood of
+                                        millions of Filipino farmers.
+                                    </p>
+                                </div>
+                                <div class="w-full flex-shrink-0 h-[500px] flex flex-col justify-end p-8 md:p-12 text-white bg-cover bg-center"
+                                    data-alt="A coastal community in Metro Manila with homes on stilts over water during high tide."
+                                    style="
+                      background-image: linear-gradient(
+                          rgba(0, 0, 0, 0.1),
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                        url('espana-flood2020-10-0218-04-24_2021-07-01_17-39-57.jpg');
+                    ">
+                                    <h3 class="text-3xl font-bold mb-2">
+                                        Sea Level Rise in Coastal Cities
+                                    </h3>
+                                    <p class="max-w-2xl">
+                                        Low-lying coastal areas, including parts of Metro Manila
+                                        and Cebu, face a direct threat from rising sea levels,
+                                        leading to more frequent flooding and saltwater intrusion
+                                        into freshwater supplies.
+                                    </p>
+                                </div>
+                            </div>
+                            <button id="prev-slide"
+                                class="absolute top-1/2 left-4 -translate-y-1/2 p-2 rounded-full bg-white/20 hover:bg-white/40 text-white transition-colors">
+                                <span class="material-symbols-outlined">arrow_back_ios_new</span>
+                            </button>
+                            <button id="next-slide"
+                                class="absolute top-1/2 right-4 -translate-y-1/2 p-2 rounded-full bg-white/20 hover:bg-white/40 text-white transition-colors">
+                                <span class="material-symbols-outlined">arrow_forward_ios</span>
+                            </button>
+                            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2" id="slider-dots">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="w-full py-10 md:py-20" id="action">
+                        <div class="bg-primary/10 dark:bg-primary/20 rounded-lg p-8 md:p-16 text-center">
+                            <h2
+                                class="text-slate-900 dark:text-slate-50 text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] pb-4">
+                                Be Part of the Solution
+                            </h2>
+                            <p class="max-w-2xl mx-auto text-slate-700 dark:text-slate-300 mb-8">
+                                Your actions can contribute to a more resilient and
+                                sustainable global community. Explore these ways to get
+                                involved and make a difference against climate change.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div
+                                    class="p-6 rounded-lg bg-white dark:bg-slate-800/50 text-left border border-slate-200 dark:border-slate-800 shadow-sm">
+                                    <span class="material-symbols-outlined text-primary text-4xl mb-3">school</span>
+                                    <h4 class="font-bold text-lg mb-2 text-slate-900 dark:text-slate-50">
+                                        Educate Yourself
+                                    </h4>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                                        Understand the science of climate change and its specific
+                                        impacts on the Philippines.
+                                    </p>
+                                    <a class="text-primary font-bold text-sm hover:underline"
+                                        href="https://www.un.org/en/climatechange/what-is-climate-change"
+                                        target="_blank">Learn More →</a>
+                                </div>
+                                <div
+                                    class="p-6 rounded-lg bg-white dark:bg-slate-800/50 text-left border border-slate-200 dark:border-slate-800 shadow-sm">
+                                    <span class="material-symbols-outlined text-primary text-4xl mb-3">footprint</span>
+                                    <h4 class="font-bold text-lg mb-2 text-slate-900 dark:text-slate-50">
+                                        Reduce Carbon Footprint
+                                    </h4>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                                        Conserve energy, use public transport, reduce waste, and
+                                        make sustainable food choices.
+                                    </p>
+                                    <a class="text-primary font-bold text-sm hover:underline"
+                                        href="https://www.carbonfootprint.com/" target="_blank">See How →</a>
+                                </div>
+                                <div
+                                    class="p-6 rounded-lg bg-white dark:bg-slate-800/50 text-left border border-slate-200 dark:border-slate-800 shadow-sm">
+                                    <span class="material-symbols-outlined text-primary text-4xl mb-3">campaign</span>
+                                    <h4 class="font-bold text-lg mb-2 text-slate-900 dark:text-slate-50">
+                                        Advocate for Change
+                                    </h4>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                                        Support renewable energy policies and join local
+                                        environmental groups pushing for climate action.
+                                    </g>
+                                    <a class="text-primary font-bold text-sm hover:underline"
+                                        href="https://www.theclimategroup.org/" target="_blank">Join a Group →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="w-full py-10 md:py-20" id="references">
+                        <h2
+                            class="text-slate-900 dark:text-slate-50 text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-8 pt-5 text-center">
+                            References
+                        </h2>
+
+                        <div class="max-w-3xl mx-auto space-y-2">
+                            <details
+                                class="group p-4 rounded-lg bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800">
+                                <summary
+                                    class="flex justify-between items-center cursor-pointer font-medium text-slate-800 dark:text-slate-200">
+                                    <span>Source 1: IPCC Sixth Assessment Report</span>
+                                    <span
+                                        class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                                </summary>
+
+                                <div class="mt-4 text-sm text-slate-600 dark:text-slate-400">
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-700/50 rounded-lg">
+                                        <p class="font-medium text-slate-700 dark:text-slate-300">
+                                            AR6 Synthesis Report (Full Report)
+                                        </p>
+                                        <a href="https://www.ipcc.ch/report/ar6/syr/" target="_blank"
+                                            class="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+                                            <span>Visit Link</span>
+                                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <details
+                                class="group p-4 rounded-lg bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800">
+                                <summary
+                                    class="flex justify-between items-center cursor-pointer font-medium text-slate-800 dark:text-slate-200">
+                                    <span>Source 2: NASA – Global Climate Change</span>
+                                    <span
+                                        class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                                </summary>
+
+                                <div class="mt-4 text-sm text-slate-600 dark:text-slate-400">
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-700/50 rounded-lg">
+                                        <p class="font-medium text-slate-700 dark:text-slate-300">
+                                            Vital Signs of the Planet
+                                        </p>
+                                        <a href="https://climate.nasa.gov/" target="_blank"
+                                            class="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+                                            <span>Visit Link</span>
+                                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <details
+                                class="group p-4 rounded-lg bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800">
+                                <summary
+                                    class="flex justify-between items-center cursor-pointer font-medium text-slate-800 dark:text-slate-200">
+                                    <span>Source 3: Daily CO₂ Levels</span>
+                                    <span
+                                        class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                                </summary>
+
+                                <div class="mt-4 text-sm text-slate-600 dark:text-slate-400">
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-700/50 rounded-lg">
+                                        <p class="font-medium text-slate-700 dark:text-slate-300">
+                                            CO₂.Earth (Daily Data)
+                                        </p>
+                                        <a href="https://www.co2.earth/daily-co2" target="_blank"
+                                            class="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+                                            <span>Visit Link</span>
+                                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <details
+                                class="group p-4 rounded-lg bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800">
+                                <summary
+                                    class="flex justify-between items-center cursor-pointer font-medium text-slate-800 dark:text-slate-200">
+                                    <span>Source 4: PAGASA – Philippine Climate & Typhoon Data</span>
+                                    <span
+                                        class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                                </summary>
+
+                                <div class="mt-4 text-sm text-slate-600 dark:text-slate-400 space-y-3">
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-700/50 rounded-lg">
+                                        <p class="font-medium text-slate-700 dark:text-slate-300">
+                                            PAGASA Homepage
+                                        </p>
+                                        <a href="https://www.pagasa.dost.gov.ph/" target="_blank"
+                                            class="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+                                            <span>Visit Link</span>
+                                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-700/50 rounded-lg">
+                                        <p class="font-medium text-slate-700 dark:text-slate-300">
+                                            Tropical Cyclone Information
+                                        </p>
+                                        <a href="https://www.pagasa.dost.gov.ph/climate/tropical-cyclone-information"
+                                            target="_blank"
+                                            class="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+                                            <span>Visit Link</span>
+                                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <details
+                                class="group p-4 rounded-lg bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800">
+                                <summary
+                                    class="flex justify-between items-center cursor-pointer font-medium text-slate-800 dark:text-slate-200">
+                                    <span>Source 5: Images / Wikimedia Commons & Local News Photos</span>
+                                    <span
+                                        class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                                </summary>
+
+                                <div class="mt-4 text-sm text-slate-600 dark:text-slate-400 space-y-3">
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-700/50 rounded-lg">
+                                        <p class="font-medium text-slate-700 dark:text-slate-300">
+                                            Wikimedia: Naga Flooding
+                                        </p>
+                                        <a href="https://commons.wikimedia.org/wiki/File:Rice_fields_submerged_in_flooding_in_Naga,_Camarines_Sur.jpg"
+                                            target="_blank"
+                                            class="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+                                            <span>Visit Link</span>
+                                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-700/50 rounded-lg">
+                                        <p class="font-medium text-slate-700 dark:text-slate-300">
+                                            Philstar: Manila Risk Report
+                                        </p>
+                                        <a href="https://www.philstar.com/headlines/2021/07/01/2109512/rising-seas-flooding-may-put-154m-people-manila-city-risk-2030-report"
+                                            target="_blank"
+                                            class="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+                                            <span>Visit Link</span>
+                                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-700/50 rounded-lg">
+                                        <p class="font-medium text-slate-700 dark:text-slate-300">
+                                            Inquirer: Typhoon Tino Report
+                                        </p>
+                                        <a href="https://newsinfo.inquirer.net/2134532/typhoon-tino-death-toll-jumps-to-66-26-missing-ndrrmc"
+                                            target="_blank"
+                                            class="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+                                            <span>Visit Link</span>
+                                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer class="w-full bg-slate-100 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800">
+                <div
+                    class="max-w-7xl mx-auto py-6 px-4 sm:px-10 text-center text-sm text-slate-500 dark:text-slate-400">
+                    <p>© 2024 Global Citizenship Initiative. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Slider Script
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.getElementById("slider");
+            if (!slider) return; // Guard clause
+            
+            const slides = slider.children;
+            const totalSlides = slides.length;
+            let currentSlide = 0;
+
+            const nextButton = document.getElementById("next-slide");
+            const prevButton = document.getElementById("prev-slide");
+            const dotsContainer = document.getElementById("slider-dots");
+
+            if (!nextButton || !prevButton || !dotsContainer) return; // Guard clause
+
+            // Create dots
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement("span");
+                dot.classList.add("size-2", "rounded-full", "cursor-pointer");
+                dot.classList.add(i === 0 ? "bg-white" : "bg-white/50");
+                dot.addEventListener("click", () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+            const dots = dotsContainer.children;
+
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+                Array.from(dots).forEach((dot, index) => {
+                    dot.classList.toggle("bg-white", index === currentSlide);
+                    dot.classList.toggle("bg-white/50", index !== currentSlide);
+                });
+            }
+
+            function goToSlide(slideIndex) {
+                currentSlide = slideIndex;
+                updateSlider();
+            }
+
+            nextButton.addEventListener("click", () => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateSlider();
+            });
+
+            prevButton.addEventListener("click", () => {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            });
+        });
+
+        // Mobile Menu Script (Separate Listener)
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.getElementById("mobile-menu-button");
+            const navLinks = document.getElementById("nav-links-container");
+
+            if (menuButton && navLinks) {
+                // Get all clickable items (links AND buttons) inside the mobile menu
+                const allMenuItems = navLinks.querySelectorAll("a, button");
+
+                // Logic to open/close menu with the hamburger button
+                menuButton.addEventListener("click", () => {
+                    navLinks.classList.toggle("hidden");
+                });
+
+                // Logic to close menu when any menu item (link or button) is clicked
+                allMenuItems.forEach(item => {
+                    item.addEventListener("click", () => {
+                        // We are on mobile and an item is clicked, so hide the menu.
+                        // On desktop, this class is overridden by 'md:flex'
+                        navLinks.classList.add("hidden");
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
